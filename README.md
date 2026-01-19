@@ -1,4 +1,4 @@
-# DocsAgent Crew
+# Wikipedia Research Crew
 
 Welcome to the DocsAgent Crew project, powered by [crewAI](https://crewai.com). This project is enhanced with a Wikipedia Research agent to extract and summarize information from Wikipedia.
 
