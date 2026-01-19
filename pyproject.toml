@@ -14,13 +14,6 @@ dependencies = [
     "fastapi-sso"
 ]
 
-
-
-
-
-
-
-
 [project.scripts]
 docs_agent = "docs_agent.main:run"
 run_crew = "docs_agent.main:run"
