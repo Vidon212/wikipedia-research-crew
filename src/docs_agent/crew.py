@@ -18,8 +18,9 @@ my_llm = LLM(
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
 
 @CrewBase
-class DocsAgent():
-    """DocsAgent crew"""
+class WikipediaResearchCrew():
+    """WikipediaResearchCrew crew"""
+
 
     agents: List[BaseAgent]
     tasks: List[Task]
@@ -46,7 +47,9 @@ class DocsAgent():
     def wikipedia_extraction_task(self) -> Task:
         return Task(
             config=self.tasks_config['wikipedia_extraction_task'], # type: ignore[index]
+            output_file='report.md'
         )
+
 
 
     @crew

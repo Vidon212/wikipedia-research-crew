@@ -1,7 +1,7 @@
 [project]
-name = "docs_agent"
+name = "wikipedia_research_crew"
 version = "0.1.0"
-description = "docs-agent using crewAI"
+description = "Wikipedia Research Crew using crewAI and local Ollama"
 authors = [{ name = "Vinod Loganathan Ramesh Kumar", email = "vidonlogan2@gmail.com" }]
 requires-python = ">=3.10,<3.14"
 dependencies = [
@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.scripts]
-docs_agent = "docs_agent.main:run"
+wikipedia_research_crew = "docs_agent.main:run"
 run_crew = "docs_agent.main:run"
 train = "docs_agent.main:train"
 replay = "docs_agent.main:replay"
@@ -25,6 +25,10 @@ run_with_trigger = "docs_agent.main:run_with_trigger"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/docs_agent"]
+
 
 [tool.crewai]
 type = "crew"

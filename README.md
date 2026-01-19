@@ -1,6 +1,6 @@
 # Wikipedia Research Crew
 
-Welcome to the DocsAgent Crew project, powered by [crewAI](https://crewai.com). This project is enhanced with a Wikipedia Research agent to extract and summarize information from Wikipedia.
+Welcome to the Wikipedia Research Crew project, powered by [crewAI](https://crewai.com). This project is designed to search, extract, and summarize information from Wikipedia using a specialized AI agent.
 
 ## Installation
 
@@ -119,13 +119,13 @@ crewai run
 
 ## Understanding Your Crew
 
-The **DocsAgent Crew** now includes:
-- **Wikipedia Information Extractor**: Specialized in searching and summarizing Wikipedia articles.
+The **Wikipedia Research Crew** now includes:
+- **Wikipedia Information Extractor**: Specialized in searching, extracting, and summarizing detailed Wikipedia articles into markdown reports.
 
 
 ## Support
 
-For support, questions, or feedback regarding the DocsAgent Crew or crewAI.
+For support, questions, or feedback regarding the Wikipedia Research Crew or crewAI.
 - Visit the [documentation](https://docs.crewai.com)
 - Reach out to the [GitHub repository](https://github.com/joaomdmoura/crewai)
 - [Chat with the docs](https://chatg.pt/DWjSBZn)
