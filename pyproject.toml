@@ -1,0 +1,37 @@
+[project]
+name = "docs_agent"
+version = "0.1.0"
+description = "docs-agent using crewAI"
+authors = [{ name = "Vinod Loganathan Ramesh Kumar", email = "vidonlogan2@gmail.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]==1.8.1",
+    "wikipedia",
+    "litellm>=1.75.3",
+    "fastapi",
+    "apscheduler",
+    "email-validator",
+    "fastapi-sso"
+]
+
+
+
+
+
+
+
+
+[project.scripts]
+docs_agent = "docs_agent.main:run"
+run_crew = "docs_agent.main:run"
+train = "docs_agent.main:train"
+replay = "docs_agent.main:replay"
+test = "docs_agent.main:test"
+run_with_trigger = "docs_agent.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

@@ -1,0 +1,9 @@
+wikipedia_extraction_task:
+  description: >
+    Research the following topic on Wikipedia: {topic}.
+    Your goal is to extract specific, detailed information. 
+    If the user asked for a list or names, provide the FULL list found on the page.
+    Synthesize all findings into a high-quality summary or table.
+  expected_output: >
+    A detailed, well-formatted markdown response containing all the facts, names, or lists found on Wikipedia regarding {topic}.
+  agent: wikipedia_researcher
